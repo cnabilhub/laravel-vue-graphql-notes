@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+    <title>Laravel</title>
 
 </head>
 
-<body class="container mx-auto">
-    <div id="app" ></div>
-    @vite('resources/js/app.js')
+<body class="antialiased">
+    <h1 class="text-red-600"> Hello from tailwind</h1>
 </body>
 
 </html>
