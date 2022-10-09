@@ -1,10 +1,5 @@
 FROM node:16.17
 WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
+COPY package.json .
+RUN npm install --quiet
 COPY . .
-
-EXPOSE 30001
-CMD [ "npm", "run", "dev" ]
