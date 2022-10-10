@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Home</title>
-
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body class="container mx-auto">
-    <div id="app" ></div>
+    <div id="app"></div>
     @vite('resources/js/app.js')
 </body>
 
