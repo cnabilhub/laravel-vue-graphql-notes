@@ -2,14 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Note>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
-class NoteFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,14 +18,10 @@ class NoteFactory extends Factory
     public function definition()
     {
         $user = User::inRandomOrder()->first();
-        $category = Category::inRandomOrder()->first();
-        return [
-            'title' => fake()->name(),
-            'content' => fake()->sentence(),
-            'user_id' => $user->id,
-            'category_id' => $category->id,
-            'is_featured' => false,
-        ];
 
+        return [
+            'name' => fake()->name(),
+            'user_id' => $user->id,
+        ];
     }
 }

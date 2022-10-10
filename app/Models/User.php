@@ -45,7 +45,12 @@ class User extends Authenticatable
     public function notes(){
         return $this->hasMany(Note::class);
 
-    } public function tags(){
+    }
+    public function categories(){
+        return $this->hasMany(Category::class);
+
+    }
+    public function tags(){
         return $this->hasMany(Tag::class);
     }
 }
