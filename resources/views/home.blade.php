@@ -9,7 +9,7 @@
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 
-<body class="container mx-auto">
+<body class=" bg-base-200 mt-0 w-full h-full min-h-screen">
     <div id="app"></div>
     @vite('resources/js/app.js')
 </body>

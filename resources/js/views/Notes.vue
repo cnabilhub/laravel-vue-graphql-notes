@@ -3,7 +3,7 @@
         <Note></Note>
         <Note></Note>
         <Note></Note>
-    </div>>
+    </div>
 </template>
 
 <script>

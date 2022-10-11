@@ -1,13 +1,13 @@
 <template>
-  <div class="container ">
-    <Nav ></Nav>
+  <div class="container mx-auto">
+    <Nav></Nav>
+      <div class="divider-horizontal"></div>
 
-      <div class="grid grid-cols-6 overflow-y-auto h-100 gap-2">
+      <div class="grid grid-cols-6 overflow-y-auto h-100 gap-4">
         <Sidebar class="h-full mr-6 hidden md:block"> again hello</Sidebar>
-          <div class="m-4 p-4 col-span-6 md:col-span-5 bg-state-200">
-
-      <router-view />
-
+          <div class="col-span-6 md:col-span-5 bg-base-100 rounded-xl mx-6 p-6
+border-base-400 border-1 border">
+             <router-view />
           </div>
       </div>
 

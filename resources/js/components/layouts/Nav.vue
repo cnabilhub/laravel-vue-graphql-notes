@@ -1,6 +1,5 @@
 <template>
-    <div class="navbar bg-base-100 shadow-md rounded mb-2">
-
+    <div class=" navbar rounded mb-4 ">
         <div class="dropdown block md:hidden">
             <label tabindex="0" class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -13,7 +12,7 @@
         </div>
 
         <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl text-primary font-bold">LaraNotes</a>
+            <a class=" normal-case text-xl text-primary font-bold">LaraNotes</a>
         </div>
         <div class="flex-none gap-2">
             <div class="form-control">
