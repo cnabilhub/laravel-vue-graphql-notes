@@ -13,32 +13,37 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/users', function () {
-    return User::all();
+//Route::get('/users', function () {
+//    return User::all();
+//});
+//
+//Route::get('/notes', function () {
+//    return \App\Models\Tag::all();
+//});
+//
+//Route::get('/tags', function () {
+//    return \App\Models\Tag::all();
+//});
+//Route::get('/user-notes', function () {
+//    return User::find(9)->notes;
+//});
+//Route::get('/user-tags', function () {
+//    return User::first()->tags;
+//});
+//Route::get('/note-tags', function () {
+//    return \App\Models\Note::first()->tags;
+//});
+//
+//Route::get('/tag-notes', function () {
+//    return \App\Models\Tag::first()->notes;
+//});
+
+Route::get('/{any}', function () {
+    return view('home');
 });
 
-Route::get('/notes', function () {
-    return \App\Models\Tag::all();
-});
-
-Route::get('/tags', function () {
-    return \App\Models\Tag::all();
-});
-Route::get('/user-notes', function () {
-    return User::find(9)->notes;
-});
-Route::get('/user-tags', function () {
-    return User::first()->tags;
-});
-Route::get('/note-tags', function () {
-    return \App\Models\Note::first()->tags;
-});
-
-Route::get('/tag-notes', function () {
-    return \App\Models\Tag::first()->notes;
-});
