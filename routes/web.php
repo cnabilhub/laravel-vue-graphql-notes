@@ -43,7 +43,7 @@ Route::get('/', function () {
 //    return \App\Models\Tag::first()->notes;
 //});
 
-Route::get('/{any}/{any2?}', function () {
+Route::get('/{any}', function () {
     return view('home');
 });
 
