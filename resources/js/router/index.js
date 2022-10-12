@@ -5,6 +5,7 @@ import Tags from "@/views/Tags.vue";
 import Categories from "@/views/Categories.vue";
 import Trashed from "@/views/Trashed.vue";
 import NotFound from "@/views/NotFound.vue";
+import SingleNote from "@/views/SingleNote.vue";
 
 const routes = [
     {
@@ -16,6 +17,11 @@ const routes = [
         path: "/notes",
         name: "Notes",
         component: Notes,
+    },
+    {
+        path: "/notes/:id",
+        name: "SingleNote",
+        component: SingleNote,
     },
     {
         path: "/tags",

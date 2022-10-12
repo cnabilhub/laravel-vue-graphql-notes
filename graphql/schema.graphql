@@ -14,6 +14,7 @@ type Query {
     notes(
         title : String @where(operator: "like")
         content : String @where(operator: "like")
+        user_id : Int @eq
     ): [Note!]! @paginate(defaultCount: 10)
 
     tag(
